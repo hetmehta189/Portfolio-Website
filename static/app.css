@@ -1,0 +1,18 @@
+/* Enable 3D Viewport Matrix */
+.perspective-container {
+    perspective: 1200px;
+}
+
+.card-3d {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+/* Depth popping for text elements inside the card */
+.pop-z-30 {
+    transform: translateZ(30px);
+}
+
+.pop-z-50 {
+    transform: translateZ(50px);
+}

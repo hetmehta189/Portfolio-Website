@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Skills{% endblock %}
+
+{% block body %}
+<section id="skills" class="perspective-container py-10">
+    
+    <h2 class="text-center text-4xl md:text-5xl font-bold text-slate-100 mb-12">My <span class="text-cyan-400">Skills</span></h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        
+        {% set skills = [
+            'Python', 'Flask', 'SQLAlchemy', 'MySQL', 
+            'HTML5', 'CSS3', 'Bootstrap', 'Git', 
+            'GitHub', 'Jinja2', 'CRUD Operations', 
+            'Session Management', 'Responsive Web Design'
+        ] %}
+
+        {% for skill in skills %}
+        <div class="card-3d bg-[#1e293b]/60 border border-slate-700/50 py-6 px-4 rounded-2xl text-center backdrop-blur-md transition-all duration-300 transform hover:-translate-y-2 hover:rotate-x-12 hover:-rotate-y-12 hover:border-cyan-400 hover:shadow-[0_15px_30px_-10px_rgba(0,229,255,0.3)] group">
+            <h3 class="pop-z-50 text-lg font-semibold text-slate-300 group-hover:text-cyan-400 transition-colors">{{ skill }}</h3>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</section>
+{% endblock %}

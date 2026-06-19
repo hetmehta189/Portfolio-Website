@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div class="perspective-container flex justify-center items-center">
+    
+    <section class="card-3d max-w-3xl w-full text-center bg-[#1e293b]/50 border border-slate-700/50 p-12 rounded-3xl backdrop-blur-xl transition-all duration-500 ease-out transform hover:rotate-x-3 hover:-rotate-y-3 hover:shadow-[0_30px_60px_rgba(0,0,0,0.4)]">
+        <h1 class="pop-z-50 text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            Hi, I'm Het Mehta
+        </h1>
+        <h3 class="pop-z-30 text-xl md:text-2xl text-slate-300 font-light mb-8">
+            Python & Flask Developer
+        </h3>
+        <p class="pop-z-30 text-slate-400 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
+            Passionate Python developer with experience in Flask, SQLAlchemy, MySQL, HTML, CSS and Bootstrap. Currently building web applications and learning backend development.
+        </p>
+        
+        <div class="pop-z-50 flex justify-center gap-6">
+            <a class="px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 shadow-lg shadow-cyan-500/20 hover:scale-105 hover:shadow-cyan-500/40 transition-all duration-300" href="/projects">View Projects</a>
+            <a class="px-8 py-3 rounded-full font-semibold text-white border border-slate-600 bg-slate-800/40 hover:bg-slate-800 hover:border-cyan-400 transition-all duration-300" href="/contact">Contact Me</a>
+        </div>
+    </section>
+
+</div>
+{% endblock %}
